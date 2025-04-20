@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{171BCF53-0F04-45DC-86FA-DBBB7D4F0FD3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Animal_Adoption.My.MyApplication</StartupObject>
+    <RootNamespace>Animal_Adoption</RootNamespace>
+    <AssemblyName>Animal Adoption</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Animal Adoption.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Animal Adoption.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DocumentationFile>Animal Adoption.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DocumentationFile>Animal Adoption.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\windows\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About_Us.Designer.vb">
+      <DependentUpon>About_Us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About_Us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Animal_add.Designer.vb">
+      <DependentUpon>Animal_add.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Animal_add.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat.Designer.vb">
+      <DependentUpon>Cat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Angile.Designer.vb">
+      <DependentUpon>Cat_Angile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Angile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Bella.Designer.vb">
+      <DependentUpon>Cat_Bella.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Bella.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Billy.Designer.vb">
+      <DependentUpon>Cat_Billy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Billy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Marley.Designer.vb">
+      <DependentUpon>Cat_Marley.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Marley.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Poppy.Designer.vb">
+      <DependentUpon>Cat_Poppy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Poppy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cat_Quincy.Designer.vb">
+      <DependentUpon>Cat_Quincy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cat_Quincy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Certificate.Designer.vb">
+      <DependentUpon>Certificate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Certificate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact_Us.Designer.vb">
+      <DependentUpon>Contact_Us.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contact_Us.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet3.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbDataSet4.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dog.Designer.vb">
+      <DependentUpon>Dog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogs_Buddy.Designer.vb">
+      <DependentUpon>Dogs_Buddy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs_Buddy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogs_Frost.Designer.vb">
+      <DependentUpon>Dogs_Frost.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs_Frost.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogs_Leo.Designer.vb">
+      <DependentUpon>Dogs_Leo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs_Leo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogs_Lucy.Designer.vb">
+      <DependentUpon>Dogs_Lucy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs_Lucy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dogs_Thor.Designer.vb">
+      <DependentUpon>Dogs_Thor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dogs_Thor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dog_Daisy.Designer.vb">
+      <DependentUpon>Dog_Daisy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dog_Daisy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pet_Gallery.Designer.vb">
+      <DependentUpon>Pet_Gallery.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pet_Gallery.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales1.Designer.vb">
+      <DependentUpon>HappyTales1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales10.Designer.vb">
+      <DependentUpon>HappyTales10.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales10.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales2.Designer.vb">
+      <DependentUpon>HappyTales2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales3.Designer.vb">
+      <DependentUpon>HappyTales3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales4.Designer.vb">
+      <DependentUpon>HappyTales4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales5.Designer.vb">
+      <DependentUpon>HappyTales5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales6.Designer.vb">
+      <DependentUpon>HappyTales6.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales6.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales7.Designer.vb">
+      <DependentUpon>HappyTales7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales8.Designer.vb">
+      <DependentUpon>HappyTales8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HappyTales9.Designer.vb">
+      <DependentUpon>HappyTales9.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HappyTales9.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.vb">
+      <DependentUpon>History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepage.Designer.vb">
+      <DependentUpon>Homepage.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Homepage.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI Form.Designer.vb">
+      <DependentUpon>MDI Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Questionnaire.Designer.vb">
+      <DependentUpon>Questionnaire.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Questionnaire.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rCat.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rCat.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rDog.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rDog.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rHistory.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rHistory.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt_animal.Designer.vb">
+      <DependentUpon>rpt_animal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_animal.vb">
+    </Compile>
+    <Compile Include="rpt_Cat.Designer.vb">
+      <DependentUpon>rpt_Cat.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_Cat.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_Dog.Designer.vb">
+      <DependentUpon>rpt_Dog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_Dog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_History.Designer.vb">
+      <DependentUpon>rpt_History.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_History.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rpt_Signup.Designer.vb">
+      <DependentUpon>rpt_Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt_Signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rSignup.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rSignup.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Send_message.Designer.vb">
+      <DependentUpon>Send_message.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Send_message.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Signup.Designer.vb">
+      <DependentUpon>Signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Request.Designer.vb">
+      <DependentUpon>Request.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Request.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View User_Manager.Designer.vb">
+      <DependentUpon>View User_Manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View User_Manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Animal_Cats.Designer.vb">
+      <DependentUpon>View_Animal_Cats.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_Animal_Cats.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View_Animal_Dogs.Designer.vb">
+      <DependentUpon>View_Animal_Dogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View_Animal_Dogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About_Us.resx">
+      <DependentUpon>About_Us.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal_add.resx">
+      <DependentUpon>Animal_add.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat.resx">
+      <DependentUpon>Cat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Angile.resx">
+      <DependentUpon>Cat_Angile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Bella.resx">
+      <DependentUpon>Cat_Bella.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Billy.resx">
+      <DependentUpon>Cat_Billy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Marley.resx">
+      <DependentUpon>Cat_Marley.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Poppy.resx">
+      <DependentUpon>Cat_Poppy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cat_Quincy.resx">
+      <DependentUpon>Cat_Quincy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Certificate.resx">
+      <DependentUpon>Certificate.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact_Us.resx">
+      <DependentUpon>Contact_Us.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog.resx">
+      <DependentUpon>Dog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogs_Buddy.resx">
+      <DependentUpon>Dogs_Buddy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogs_Frost.resx">
+      <DependentUpon>Dogs_Frost.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogs_Leo.resx">
+      <DependentUpon>Dogs_Leo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogs_Lucy.resx">
+      <DependentUpon>Dogs_Lucy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dogs_Thor.resx">
+      <DependentUpon>Dogs_Thor.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dog_Daisy.resx">
+      <DependentUpon>Dog_Daisy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pet_Gallery.resx">
+      <DependentUpon>Pet_Gallery.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales1.resx">
+      <DependentUpon>HappyTales1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales10.resx">
+      <DependentUpon>HappyTales10.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales2.resx">
+      <DependentUpon>HappyTales2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales3.resx">
+      <DependentUpon>HappyTales3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales4.resx">
+      <DependentUpon>HappyTales4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales5.resx">
+      <DependentUpon>HappyTales5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales6.resx">
+      <DependentUpon>HappyTales6.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales7.resx">
+      <DependentUpon>HappyTales7.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales8.resx">
+      <DependentUpon>HappyTales8.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HappyTales9.resx">
+      <DependentUpon>HappyTales9.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Homepage.resx">
+      <DependentUpon>Homepage.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI Form.resx">
+      <DependentUpon>MDI Form.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Questionnaire.resx">
+      <DependentUpon>Questionnaire.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rCat.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rCat.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rDog.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rDog.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rHistory.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rHistory.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_animal.resx">
+      <DependentUpon>rpt_animal.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Cat.resx">
+      <DependentUpon>rpt_Cat.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Dog.resx">
+      <DependentUpon>rpt_Dog.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_History.resx">
+      <DependentUpon>rpt_History.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt_Signup.resx">
+      <DependentUpon>rpt_Signup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rSignup.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rSignup.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Send_message.resx">
+      <DependentUpon>Send_message.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Signup.resx">
+      <DependentUpon>Signup.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Request.resx">
+      <DependentUpon>Request.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View User_Manager.resx">
+      <DependentUpon>View User_Manager.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Animal_Cats.resx">
+      <DependentUpon>View_Animal_Cats.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View_Animal_Dogs.resx">
+      <DependentUpon>View_Animal_Dogs.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animal-shelter-clipart-4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\website_BannerImg_02_Adoption_B.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portrait-of-kitten-and-puppy-on-grassy-field-at-royalty-free-image-936542938-1566225743.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\portrait-of-kitten-and-puppy-on-grassy-field-at-royalty-free-image-936542938-15662257431.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="dbDataSet.xsc">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet.xss">
+      <DependentUpon>dbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet1.xsc">
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet1.xss">
+      <DependentUpon>dbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet2.xsc">
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet2.xss">
+      <DependentUpon>dbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet3.xsc">
+      <DependentUpon>dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet3.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet3.xss">
+      <DependentUpon>dbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet4.xsc">
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="dbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dbDataSet4.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dbDataSet4.xss">
+      <DependentUpon>dbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\portrait-of-kitten-and-puppy-on-grassy-field-at-royalty-free-image-936542938-1566225743 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="db.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
